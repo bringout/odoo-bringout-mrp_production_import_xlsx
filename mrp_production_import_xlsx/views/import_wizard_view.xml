@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Wizard form -->
+    <record id="view_mrp_production_import_wizard" model="ir.ui.view">
+        <field name="name">mrp.production.import.form</field>
+        <field name="model">mrp.production.import</field>
+        <field name="arch" type="xml">
+            <form string="Import Manufacturing Order Components">
+                <sheet>
+                    <group>
+                        <field name="product_id" options="{'no_create': True}"/>
+                        <field name="product_qty"/>
+                        <field name="file" filename="file_name" attrs="{'readonly': [('is_processing', '=', True)]}"/>
+                        <field name="file_name" invisible="1"/>
+                        
+                        <field name="auto_confirm" invisible="1" attrs="{'readonly': [('is_processing', '=', True)]}"/>
+                        
+                        <field name="is_processing" invisible="1"/>
+                        <field name="state" invisible="1"/>
+                        <field name="import_status" invisible="1"/>
+                    </group>
+
+                    <!-- Confirmation message -->
+                    <div class="alert alert-info" role="alert" attrs="{'invisible': [('state','!=','confirm')]}">
+                        <p>This file contains <strong><field name="row_count" class="oe_inline" readonly="1"/></strong> rows.</p>
+                        <p>Do you want to import these rows?</p>
+                    </div>
+
+                    <!-- Progress indicator -->
+                    <group attrs="{'invisible': ['|', ('is_processing','=',False), ('state','=','done')]}">
+                        <div class="o_import_progress">
+                            <div class="alert alert-info" role="status">
+                                <h4>Import in progress...</h4>
+                                <p>Processing row <field name="progress_current" class="oe_inline"/> of <field name="progress_total" class="oe_inline"/></p>
+                                <div class="progress" style="height: 25px;">
+                                    <div class="progress-bar progress-bar-striped active" role="progressbar"
+                                         t-att-style="'width: ' + str(int(progress_percentage)) + '%;'"
+                                         t-att-aria-valuenow="progress_percentage"
+                                         aria-valuemin="0"
+                                         aria-valuemax="100">
+                                        <span><field name="progress_percentage" widget="percentage"/></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </group>
+
+                    <!-- Log displayed once everything is done -->
+                    <div class="alert alert-danger" role="alert" attrs="{'invisible': ['|', ('state','!=','done'), ('import_status','!=','error')]}">
+                        <h4>Import ERROR</h4>
+                        <p>The following errors occurred:</p>
+                        <field name="log" nolabel="1" readonly="1" widget="text"/>
+                    </div>
+                    <div class="alert alert-success" role="alert" attrs="{'invisible': ['|', ('state','!=','done'), ('import_status','!=','success')]}">
+                        <h4>Import completed!</h4>
+                        <field name="log" nolabel="1" readonly="1" widget="text"/>
+                    </div>
+                </sheet>
+
+                <footer>
+                    <!-- STEP-1 : only visible while in *draft* -->
+                    <button name="action_count_rows" string="Continue"
+                            type="object" class="btn-primary"
+                            attrs="{'invisible': [('state','!=','draft')]}"/>
+
+                    <!-- STEP-2 : only visible while in *confirm* -->
+                    <button name="action_import" string="Import"
+                            type="object" class="btn-primary"
+                            attrs="{'invisible': ['|', ('state','!=','confirm'), ('is_processing','=',True)]}"/>
+
+                    <!-- Show spinner while processing -->
+                    <span attrs="{'invisible': [('is_processing','=',False)]}">
+                        <i class="fa fa-spinner fa-spin"/> Processing...
+                    </span>
+
+                    <button string="Close" class="btn-secondary"
+                            special="cancel"
+                            attrs="{'invisible': [('is_processing','=',True)]}"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!-- Window action -->
+    <record id="action_mrp_production_import_wizard" model="ir.actions.act_window">
+        <field name="name">Import Manufacturing Order Components</field>
+        <field name="res_model">mrp.production.import</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <!-- Menu item  (Manufacturing ▸ Operations) -->
+    <menuitem id="menu_mrp_production_import_wizard"
+              name="Import Manufacturing Order Components"
+              parent="mrp.menu_mrp_root"
+              action="action_mrp_production_import_wizard"
+              sequence="90"/>
+</odoo>

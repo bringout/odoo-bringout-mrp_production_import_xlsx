@@ -1,0 +1,402 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mrp_production_import_xlsx
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-02 10:31+0000\n"
+"PO-Revision-Date: 2025-08-02 10:31+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "1 production order created."
+msgstr "Proizvodni nalog kreiran. Dokument se nalazi u listi dokumenata."
+
+#. module: mrp_production_import_xlsx
+#: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
+msgid ""
+"<span attrs=\"{'invisible': [('is_processing','=',False)]}\">\n"
+"                        <i class=\"fa fa-spinner fa-spin\"/> Processing...\n"
+"                    </span>"
+msgstr ""
+"<span attrs=\"{'invisible': [('is_processing','=',False)]}\">\n"
+"                        <i class=\"fa fa-spinner fa-spin\"/> Procesiram...\n"
+"                    </span>"
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__auto_confirm
+msgid "Automatically confirm orders"
+msgstr "Automatski potvrdi nalog"
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "Bad date: %s"
+msgstr "Pogrešan datum: %s"
+
+#. module: mrp_production_import_xlsx
+#: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
+msgid "Close"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "Column 'Product' is empty in the file."
+msgstr "Kolona 'Artikal' je prazna u ovom fajlu."
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "Column 'Product' is mandatory."
+msgstr "Kolona 'Artikal' je obavezna."
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "Company not found: %s"
+msgstr "Preduzeće ne postoji: %s"
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields.selection,name:mrp_production_import_xlsx.selection__mrp_production_import__state__confirm
+msgid "Confirm"
+msgstr "Potvrdi"
+
+#. module: mrp_production_import_xlsx
+#: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
+msgid "Continue"
+msgstr "Nastavi"
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "Could not convert %s to a number."
+msgstr "Ne mogu konvertovati %s u broj."
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__create_uid
+msgid "Created by"
+msgstr "Kreirano od"
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__create_date
+msgid "Created on"
+msgstr "Krenirano"
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__progress_current
+msgid "Current Progress"
+msgstr "Tekući progres"
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__display_name
+msgid "Display Name"
+msgstr "Ime"
+
+#. module: mrp_production_import_xlsx
+#: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
+msgid "Do you want to import these rows?"
+msgstr "Želite importovati ove zapise?"
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields.selection,name:mrp_production_import_xlsx.selection__mrp_production_import__state__done
+msgid "Done"
+msgstr "Završeno"
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields.selection,name:mrp_production_import_xlsx.selection__mrp_production_import__state__draft
+msgid "Draft"
+msgstr "Priprema"
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields.selection,name:mrp_production_import_xlsx.selection__mrp_production_import__import_status__error
+msgid "Error"
+msgstr "Greška"
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "Errors (%s):"
+msgstr "Greške (%s):"
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__file_name
+msgid "File Name"
+msgstr "Ime fajla"
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__id
+msgid "ID"
+msgstr "ID"
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,help:mrp_production_import_xlsx.field_mrp_production_import__auto_confirm
+msgid "If ticked, the wizard will confirm each new MO after creation."
+msgstr "Ako označite, generisani nalog će odmah imati status 'Potvrđen'."
+
+#. module: mrp_production_import_xlsx
+#: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
+msgid "Import"
+msgstr "Uvoz"
+
+#. module: mrp_production_import_xlsx
+#: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
+msgid "Import ERROR"
+msgstr "GREŠKA pri uvozu"
+
+#. module: mrp_production_import_xlsx
+#: model:ir.actions.act_window,name:mrp_production_import_xlsx.action_mrp_production_import_wizard
+#: model:ir.ui.menu,name:mrp_production_import_xlsx.menu_mrp_production_import_wizard
+#: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
+msgid "Import Manufacturing Order Components"
+msgstr "Uvoz komponenti iz XLSX"
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model,name:mrp_production_import_xlsx.model_mrp_production_import
+msgid "Import Manufacturing Orders from XLS/XLSX"
+msgstr "Uvoz proizvodnog naloga iz XLSX"
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__import_status
+msgid "Import Status"
+msgstr "Status uvoza"
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid ""
+"Import aborted — the following product codes do not exist in the database:\n"
+"%s"
+msgstr ""
+"Uvoz prekinut — sljedeći artikli ne postoje u bazi:\n"
+"%s"
+
+#. module: mrp_production_import_xlsx
+#: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
+msgid "Import completed!"
+msgstr "Uvoz završen!"
+
+#. module: mrp_production_import_xlsx
+#: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
+msgid "Import in progress..."
+msgstr "Uvoz u toku..."
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__log
+msgid "Import log"
+msgstr "Import log"
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,help:mrp_production_import_xlsx.field_mrp_production_import__is_processing
+msgid "Indicates if import is currently in progress"
+msgstr "Označava da li je uvoz trenutno u toku"
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__is_processing
+msgid "Is Processing"
+msgstr "Procesira se"
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import____last_update
+msgid "Last Modified on"
+msgstr "Posljednja promjena"
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__write_uid
+msgid "Last Updated by"
+msgstr "Posljednji ažurirao/la"
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__write_date
+msgid "Last Updated on"
+msgstr "Posljenje ažurirane"
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "Line %(line)s – %(error)s"
+msgstr "Linije %(line)s – %(error)s"
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,help:mrp_production_import_xlsx.field_mrp_production_import__row_count
+msgid "Number of non-empty data rows detected in the spreadsheet."
+msgstr "Broj redova u xlsx dokumentu."
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,help:mrp_production_import_xlsx.field_mrp_production_import__progress_current
+msgid "Number of rows processed so far"
+msgstr "Broj redova ažuriran do sada"
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "Please confirm the import first."
+msgstr "Prvo potvrdite uvoz."
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "Please upload a valid XLS/XLSX file"
+msgstr "Molimo navedite validan XLSX fajl"
+
+#. module: mrp_production_import_xlsx
+#: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
+msgid "Processing row"
+msgstr "Procesiram red"
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "Product not found: %s"
+msgstr "Artikal nije nađen: %s"
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__product_id
+msgid "Product to produce"
+msgstr "Proizvesti artikal"
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__progress_percentage
+msgid "Progress %"
+msgstr "Progres %"
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "Quantity must be strictly positive."
+msgstr "Količina mora biti pozitivna."
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__product_qty
+msgid "Quantity to produce"
+msgstr "Proizvesti količinu"
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__row_count
+msgid "Rows in file"
+msgstr "Redova u fajlu"
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__state
+msgid "Status"
+msgstr "Status"
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields.selection,name:mrp_production_import_xlsx.selection__mrp_production_import__import_status__success
+msgid "Success"
+msgstr "Uspjeh"
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "The file does not contain any data rows."
+msgstr "Fajl ne sadrži podatke."
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "The file is empty."
+msgstr "Fajl je prazan."
+
+#. module: mrp_production_import_xlsx
+#: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
+msgid "The following errors occurred:"
+msgstr "Greške:"
+
+#. module: mrp_production_import_xlsx
+#: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
+msgid "This file contains"
+msgstr "Fajl sadrži"
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__progress_total
+msgid "Total Progress"
+msgstr "Ukupan progres"
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,help:mrp_production_import_xlsx.field_mrp_production_import__progress_total
+msgid "Total number of rows to process"
+msgstr "Broj redova za obradu"
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "Unable to read the file: %s"
+msgstr "Ne mogu pročitati fajl: %s"
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "UoM not found: %s"
+msgstr "JMJ nije nađena: %s"
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "User not found: %s"
+msgstr "Korisnik ne postoji: %s"
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__file
+msgid "XLS/XLSX file"
+msgstr "XLSX fajl"
+
+#. module: mrp_production_import_xlsx
+#: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
+msgid "of"
+msgstr "od"
+
+#. module: mrp_production_import_xlsx
+#: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
+msgid "rows."
+msgstr "redova."
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "Product"
+msgstr "Artikal"
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "Quantity"
+msgstr "Količina"
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "UoM"
+msgstr "JMJ"

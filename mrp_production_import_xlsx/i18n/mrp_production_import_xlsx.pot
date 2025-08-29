@@ -1,0 +1,397 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mrp_production_import_xlsx
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-02 10:59+0000\n"
+"PO-Revision-Date: 2025-08-02 10:59+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "1 production order created."
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
+msgid ""
+"<span attrs=\"{'invisible': [('is_processing','=',False)]}\">\n"
+"                        <i class=\"fa fa-spinner fa-spin\"/> Processing...\n"
+"                    </span>"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__auto_confirm
+msgid "Automatically confirm orders"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "Bad date: %s"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
+msgid "Close"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "Column 'Product' is empty in the file."
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "Column 'Product' is mandatory."
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "Company not found: %s"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields.selection,name:mrp_production_import_xlsx.selection__mrp_production_import__state__confirm
+msgid "Confirm"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
+msgid "Continue"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "Could not convert %s to a number."
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__progress_current
+msgid "Current Progress"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
+msgid "Do you want to import these rows?"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields.selection,name:mrp_production_import_xlsx.selection__mrp_production_import__state__done
+msgid "Done"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields.selection,name:mrp_production_import_xlsx.selection__mrp_production_import__state__draft
+msgid "Draft"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields.selection,name:mrp_production_import_xlsx.selection__mrp_production_import__import_status__error
+msgid "Error"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "Errors (%s):"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__file_name
+msgid "File Name"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__id
+msgid "ID"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,help:mrp_production_import_xlsx.field_mrp_production_import__auto_confirm
+msgid "If ticked, the wizard will confirm each new MO after creation."
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
+msgid "Import"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
+msgid "Import ERROR"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.actions.act_window,name:mrp_production_import_xlsx.action_mrp_production_import_wizard
+#: model:ir.ui.menu,name:mrp_production_import_xlsx.menu_mrp_production_import_wizard
+#: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
+msgid "Import Manufacturing Order Components"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model,name:mrp_production_import_xlsx.model_mrp_production_import
+msgid "Import Manufacturing Orders from XLS/XLSX"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__import_status
+msgid "Import Status"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid ""
+"Import aborted — the following product codes do not exist in the database:\n"
+"%s"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
+msgid "Import completed!"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
+msgid "Import in progress..."
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__log
+msgid "Import log"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,help:mrp_production_import_xlsx.field_mrp_production_import__is_processing
+msgid "Indicates if import is currently in progress"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__is_processing
+msgid "Is Processing"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "Line %(line)s – %(error)s"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,help:mrp_production_import_xlsx.field_mrp_production_import__row_count
+msgid "Number of non-empty data rows detected in the spreadsheet."
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,help:mrp_production_import_xlsx.field_mrp_production_import__progress_current
+msgid "Number of rows processed so far"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "Please confirm the import first."
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "Please upload a valid XLS/XLSX file"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
+msgid "Processing row"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "Product"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "Product not found: %s"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__product_id
+msgid "Product to produce"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__progress_percentage
+msgid "Progress %"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "Quantity"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "Quantity must be strictly positive."
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__product_qty
+msgid "Quantity to produce"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__row_count
+msgid "Rows in file"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__state
+msgid "Status"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields.selection,name:mrp_production_import_xlsx.selection__mrp_production_import__import_status__success
+msgid "Success"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "The file does not contain any data rows."
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "The file is empty."
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
+msgid "The following errors occurred:"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
+msgid "This file contains"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__progress_total
+msgid "Total Progress"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,help:mrp_production_import_xlsx.field_mrp_production_import__progress_total
+msgid "Total number of rows to process"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "Unable to read the file: %s"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "UoM"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "UoM not found: %s"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#. odoo-python
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
+#, python-format
+msgid "User not found: %s"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__file
+msgid "XLS/XLSX file"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
+msgid "of"
+msgstr ""
+
+#. module: mrp_production_import_xlsx
+#: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
+msgid "rows."
+msgstr ""
