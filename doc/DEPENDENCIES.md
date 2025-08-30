@@ -2,4 +2,4 @@
 
 This addon depends on:
 
-- [mrp](../../odoo-bringout-oca-ocb-mrp)
+- [mrp](../../../../../oca-ocb-mrp/odoo-bringout-oca-ocb-mrp)
