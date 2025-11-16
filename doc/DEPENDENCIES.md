@@ -2,4 +2,4 @@
 
 This addon depends on:
 
-- [mrp](https://github.com/bringout/oca-ocb-mrp/tree/e8e8678176d39f14faf1d1666bd7344bba486fd5/odoo-bringout-oca-ocb-mrp)
+- [mrp](https://github.com/bringout/oca-ocb-mrp/tree/2873cde70408ed3f39d269fb77e087c42c4bab87/odoo-bringout-oca-ocb-mrp)
