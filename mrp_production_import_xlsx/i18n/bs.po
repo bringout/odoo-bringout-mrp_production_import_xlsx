@@ -115,7 +115,7 @@ msgstr "[PREVOD POTREBAN: Do you want to import these rows?...]"
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields.selection,name:mrp_production_import_xlsx.selection__mrp_production_import__state__done
 msgid "Done"
-msgstr "Gotovo"
+msgstr "Dovršeno"
 
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields.selection,name:mrp_production_import_xlsx.selection__mrp_production_import__state__draft
@@ -215,17 +215,17 @@ msgstr "[PREVOD: Is Processing]"
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import____last_update
 msgid "Last Modified on"
-msgstr "Zadnje mijenjano"
+msgstr "Zadnja izmjena na"
 
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__write_uid
 msgid "Last Updated by"
-msgstr "Zadnji ažurirao"
+msgstr "Zadnje ažuriranje izvršio"
 
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__write_date
 msgid "Last Updated on"
-msgstr "Zadnje ažurirano"
+msgstr "Zadnje ažuriranje na"
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
@@ -270,7 +270,7 @@ msgstr "[PREVOD: Processing row]"
 #: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
 #, python-format
 msgid "Product"
-msgstr "Artikal"
+msgstr "Proizvod"
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
