@@ -184,8 +184,8 @@ msgid ""
 "Import aborted — the following product codes do not exist in the database:\n"
 "%s"
 msgstr ""
-"[PREVOD POTREBAN: Import aborted — the following product codes do not exist "
-"in...]"
+"Import aborted — the following product codes do not exist in the database:\n"
+"%s"
 
 #. module: mrp_production_import_xlsx
 #: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
