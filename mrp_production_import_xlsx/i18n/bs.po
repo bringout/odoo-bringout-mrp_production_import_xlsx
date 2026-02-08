@@ -20,7 +20,7 @@ msgstr ""
 #: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
 #, python-format
 msgid "1 production order created."
-msgstr "[PREVOD POTREBAN: 1 production order created....]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
@@ -29,20 +29,18 @@ msgid ""
 "                        <i class=\"fa fa-spinner fa-spin\"/> Processing...\n"
 "                    </span>"
 msgstr ""
-"[PREVOD POTREBAN: <span attrs=\"{'invisible': [('is_processing','=',False)]}\">\n"
-"...]"
 
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__auto_confirm
 msgid "Automatically confirm orders"
-msgstr "[PREVOD POTREBAN: Automatically confirm orders...]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
 #: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
 #, python-format
 msgid "Bad date: %s"
-msgstr "[PREVOD: Bad date: %s]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
@@ -54,21 +52,21 @@ msgstr "Zatvori"
 #: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
 #, python-format
 msgid "Column 'Product' is empty in the file."
-msgstr "[PREVOD POTREBAN: Column 'Product' is empty in the file....]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
 #: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
 #, python-format
 msgid "Column 'Product' is mandatory."
-msgstr "[PREVOD POTREBAN: Column 'Product' is mandatory....]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
 #: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
 #, python-format
 msgid "Company not found: %s"
-msgstr "[PREVOD POTREBAN: Company not found: %s...]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields.selection,name:mrp_production_import_xlsx.selection__mrp_production_import__state__confirm
@@ -85,7 +83,7 @@ msgstr "Nastavi"
 #: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
 #, python-format
 msgid "Could not convert %s to a number."
-msgstr "[PREVOD POTREBAN: Could not convert %s to a number....]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__create_uid
@@ -100,7 +98,7 @@ msgstr "Kreirano"
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__progress_current
 msgid "Current Progress"
-msgstr "[PREVOD: Current Progress]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__display_name
@@ -110,7 +108,7 @@ msgstr "Prikazani naziv"
 #. module: mrp_production_import_xlsx
 #: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
 msgid "Do you want to import these rows?"
-msgstr "[PREVOD POTREBAN: Do you want to import these rows?...]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields.selection,name:mrp_production_import_xlsx.selection__mrp_production_import__state__done
@@ -132,7 +130,7 @@ msgstr "Greška"
 #: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
 #, python-format
 msgid "Errors (%s):"
-msgstr "[PREVOD: Errors (%s):]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__file_name
@@ -148,8 +146,6 @@ msgstr "ID"
 #: model:ir.model.fields,help:mrp_production_import_xlsx.field_mrp_production_import__auto_confirm
 msgid "If ticked, the wizard will confirm each new MO after creation."
 msgstr ""
-"[PREVOD POTREBAN: If ticked, the wizard will confirm each new MO after "
-"creatio...]"
 
 #. module: mrp_production_import_xlsx
 #: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
@@ -159,22 +155,22 @@ msgstr "Uvoz"
 #. module: mrp_production_import_xlsx
 #: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
 msgid "Import ERROR"
-msgstr "[PREVOD: Import ERROR]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #: model:ir.actions.act_window,name:mrp_production_import_xlsx.action_mrp_production_import_wizard
 msgid "Import Manufacturing Order Components"
-msgstr "[PREVOD POTREBAN: Import Manufacturing Order Components...]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #: model:ir.model,name:mrp_production_import_xlsx.model_mrp_production_import
 msgid "Import Manufacturing Orders from XLS/XLSX"
-msgstr "[PREVOD POTREBAN: Import Manufacturing Orders from XLS/XLSX...]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__import_status
 msgid "Import Status"
-msgstr "[PREVOD: Import Status]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
@@ -190,27 +186,27 @@ msgstr ""
 #. module: mrp_production_import_xlsx
 #: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
 msgid "Import completed!"
-msgstr "[PREVOD: Import completed!]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
 msgid "Import in progress..."
-msgstr "[PREVOD POTREBAN: Import in progress......]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__log
 msgid "Import log"
-msgstr "[PREVOD: Import log]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields,help:mrp_production_import_xlsx.field_mrp_production_import__is_processing
 msgid "Indicates if import is currently in progress"
-msgstr "[PREVOD POTREBAN: Indicates if import is currently in progress...]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__is_processing
 msgid "Is Processing"
-msgstr "[PREVOD: Is Processing]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import____last_update
@@ -232,38 +228,36 @@ msgstr "Zadnje ažurirano"
 #: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
 #, python-format
 msgid "Line %(line)s – %(error)s"
-msgstr "[PREVOD POTREBAN: Line %(line)s – %(error)s...]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields,help:mrp_production_import_xlsx.field_mrp_production_import__row_count
 msgid "Number of non-empty data rows detected in the spreadsheet."
 msgstr ""
-"[PREVOD POTREBAN: Number of non-empty data rows detected in the "
-"spreadsheet....]"
 
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields,help:mrp_production_import_xlsx.field_mrp_production_import__progress_current
 msgid "Number of rows processed so far"
-msgstr "[PREVOD POTREBAN: Number of rows processed so far...]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
 #: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
 #, python-format
 msgid "Please confirm the import first."
-msgstr "[PREVOD POTREBAN: Please confirm the import first....]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
 #: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
 #, python-format
 msgid "Please upload a valid XLS/XLSX file"
-msgstr "[PREVOD POTREBAN: Please upload a valid XLS/XLSX file...]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
 msgid "Processing row"
-msgstr "[PREVOD: Processing row]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
@@ -277,17 +271,17 @@ msgstr "Artikal"
 #: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
 #, python-format
 msgid "Product not found: %s"
-msgstr "[PREVOD POTREBAN: Product not found: %s...]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__product_id
 msgid "Product to produce"
-msgstr "[PREVOD: Product to produce]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__progress_percentage
 msgid "Progress %"
-msgstr "[PREVOD: Progress %]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
@@ -301,17 +295,17 @@ msgstr "Količina"
 #: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
 #, python-format
 msgid "Quantity must be strictly positive."
-msgstr "[PREVOD POTREBAN: Quantity must be strictly positive....]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__product_qty
 msgid "Quantity to produce"
-msgstr "[PREVOD: Quantity to produce]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__row_count
 msgid "Rows in file"
-msgstr "[PREVOD: Rows in file]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__state
@@ -328,41 +322,41 @@ msgstr "Uspjeh"
 #: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
 #, python-format
 msgid "The file does not contain any data rows."
-msgstr "[PREVOD POTREBAN: The file does not contain any data rows....]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
 #: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
 #, python-format
 msgid "The file is empty."
-msgstr "[PREVOD: The file is empty.]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
 msgid "The following errors occurred:"
-msgstr "[PREVOD POTREBAN: The following errors occurred:...]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
 msgid "This file contains"
-msgstr "[PREVOD: This file contains]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__progress_total
 msgid "Total Progress"
-msgstr "[PREVOD: Total Progress]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields,help:mrp_production_import_xlsx.field_mrp_production_import__progress_total
 msgid "Total number of rows to process"
-msgstr "[PREVOD POTREBAN: Total number of rows to process...]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
 #: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
 #, python-format
 msgid "Unable to read the file: %s"
-msgstr "[PREVOD POTREBAN: Unable to read the file: %s...]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
@@ -376,19 +370,19 @@ msgstr "JMJ"
 #: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
 #, python-format
 msgid "UoM not found: %s"
-msgstr "[PREVOD: UoM not found: %s]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
 #: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
 #, python-format
 msgid "User not found: %s"
-msgstr "[PREVOD: User not found: %s]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__file
 msgid "XLS/XLSX file"
-msgstr "[PREVOD: XLS/XLSX file]"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
@@ -398,4 +392,4 @@ msgstr "od"
 #. module: mrp_production_import_xlsx
 #: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
 msgid "rows."
-msgstr "[PREVOD: rows.]"
+msgstr ""
