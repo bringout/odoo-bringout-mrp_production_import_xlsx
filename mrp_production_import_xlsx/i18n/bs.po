@@ -17,7 +17,7 @@ msgstr ""
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
-#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
 #, python-format
 msgid "1 production order created."
 msgstr ""
@@ -37,7 +37,7 @@ msgstr ""
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
-#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
 #, python-format
 msgid "Bad date: %s"
 msgstr ""
@@ -49,21 +49,21 @@ msgstr "Zatvori"
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
-#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
 #, python-format
 msgid "Column 'Product' is empty in the file."
 msgstr ""
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
-#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
 #, python-format
 msgid "Column 'Product' is mandatory."
 msgstr ""
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
-#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
 #, python-format
 msgid "Company not found: %s"
 msgstr ""
@@ -80,7 +80,7 @@ msgstr "Nastavi"
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
-#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
 #, python-format
 msgid "Could not convert %s to a number."
 msgstr ""
@@ -103,7 +103,7 @@ msgstr ""
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__display_name
 msgid "Display Name"
-msgstr "Prikazani naziv"
+msgstr "Naziv za prikaz"
 
 #. module: mrp_production_import_xlsx
 #: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
@@ -118,7 +118,7 @@ msgstr "Gotovo"
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields.selection,name:mrp_production_import_xlsx.selection__mrp_production_import__state__draft
 msgid "Draft"
-msgstr "U pripremi"
+msgstr "Nacrt"
 
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields.selection,name:mrp_production_import_xlsx.selection__mrp_production_import__import_status__error
@@ -127,7 +127,7 @@ msgstr "Greška"
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
-#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
 #, python-format
 msgid "Errors (%s):"
 msgstr ""
@@ -174,14 +174,12 @@ msgstr ""
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
-#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
 #, python-format
 msgid ""
 "Import aborted — the following product codes do not exist in the database:\n"
 "%s"
 msgstr ""
-"Import aborted — the following product codes do not exist in the database:\n"
-"%s"
 
 #. module: mrp_production_import_xlsx
 #: model_terms:ir.ui.view,arch_db:mrp_production_import_xlsx.view_mrp_production_import_wizard
@@ -211,7 +209,7 @@ msgstr ""
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import____last_update
 msgid "Last Modified on"
-msgstr "Zadnje mijenjano"
+msgstr "Zadnja izmjena"
 
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__write_uid
@@ -225,7 +223,7 @@ msgstr "Zadnje ažurirano"
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
-#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
 #, python-format
 msgid "Line %(line)s – %(error)s"
 msgstr ""
@@ -242,14 +240,14 @@ msgstr ""
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
-#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
 #, python-format
 msgid "Please confirm the import first."
 msgstr ""
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
-#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
 #, python-format
 msgid "Please upload a valid XLS/XLSX file"
 msgstr ""
@@ -261,14 +259,14 @@ msgstr ""
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
-#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
 #, python-format
 msgid "Product"
-msgstr "Artikal"
+msgstr "Proizvod"
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
-#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
 #, python-format
 msgid "Product not found: %s"
 msgstr ""
@@ -285,14 +283,14 @@ msgstr ""
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
-#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
 #, python-format
 msgid "Quantity"
 msgstr "Količina"
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
-#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
 #, python-format
 msgid "Quantity must be strictly positive."
 msgstr ""
@@ -310,7 +308,7 @@ msgstr ""
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields,field_description:mrp_production_import_xlsx.field_mrp_production_import__state
 msgid "Status"
-msgstr "Status"
+msgstr ""
 
 #. module: mrp_production_import_xlsx
 #: model:ir.model.fields.selection,name:mrp_production_import_xlsx.selection__mrp_production_import__import_status__success
@@ -319,14 +317,14 @@ msgstr "Uspjeh"
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
-#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
 #, python-format
 msgid "The file does not contain any data rows."
 msgstr ""
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
-#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
 #, python-format
 msgid "The file is empty."
 msgstr ""
@@ -353,28 +351,28 @@ msgstr ""
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
-#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
 #, python-format
 msgid "Unable to read the file: %s"
 msgstr ""
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
-#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
 #, python-format
 msgid "UoM"
 msgstr "JMJ"
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
-#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
 #, python-format
 msgid "UoM not found: %s"
 msgstr ""
 
 #. module: mrp_production_import_xlsx
 #. odoo-python
-#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py
+#: code:addons/mrp_production_import_xlsx/wizards/mrp_import_wizard.py:0
 #, python-format
 msgid "User not found: %s"
 msgstr ""
