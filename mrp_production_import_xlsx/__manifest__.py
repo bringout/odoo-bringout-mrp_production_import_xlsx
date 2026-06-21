@@ -1,6 +1,6 @@
 {
     "name": "MRP Production Import Components from XLSX",
-    "version": "16.0.1.0.6",
+    "version": "19.0.1.0.6",
     "summary": "Generate Manufacturing Order from Components in XLSX file",
     "author": "bring.out doo Sarajevo",
     "website": "https://www.bring.out.ba",
