@@ -1,71 +1,55 @@
-// TODO v19: this module uses the legacy web.FormController.include / _rpc / this.$
-// API removed in Odoo 17+. Disabled in __manifest__.py assets; rewrite as an OWL
-// patch (@web/views/form/form_controller + @web/core/orm_service) and re-enable.
-odoo.define('mrp_production_import.progress', function (require) {
-    "use strict";
+/** @odoo-module **/
+// v19 OWL rewrite of the legacy web.FormController.include progress poller.
+// Behaviour: on a mrp.production.import form, poll get_import_progress() every
+// second while is_processing, update the progress bar, and reload when done.
+// ⚠️ Initial port — verify on a real v19 instance (OWL lifecycle hooks + the
+// ORM service; the progress-bar DOM update may be better driven by record fields).
+import { patch } from "@web/core/utils/patch";
+import { FormController } from "@web/views/form/form_controller";
+import { useService } from "@web/core/utils/hooks";
+import { onMounted, onWillUnmount } from "@odoo/owl";
 
-    const FormController = require('web.FormController');
-    const core = require('web.core');
-    const _t = core._t;
-
-    FormController.include({
-        init: function () {
-            this._super.apply(this, arguments);
-            this.progressInterval = null;
-        },
-
-        willStart: function () {
-            const res = this._super.apply(this, arguments);
-            if (this.modelName === 'mrp.production.import') {
-                this._startProgressTracking();
+patch(FormController.prototype, {
+    setup() {
+        super.setup();
+        this._mrpProgressTimer = null;
+        if (this.props.resModel === "mrp.production.import") {
+            this.orm = useService("orm");
+            onMounted(() => this._mrpStartProgress());
+            onWillUnmount(() => this._mrpStopProgress());
+        }
+    },
+    _mrpStopProgress() {
+        if (this._mrpProgressTimer) {
+            clearInterval(this._mrpProgressTimer);
+            this._mrpProgressTimer = null;
+        }
+    },
+    _mrpStartProgress() {
+        this._mrpStopProgress();
+        this._mrpProgressTimer = setInterval(async () => {
+            const rec = this.model?.root;
+            const resId = rec?.resId;
+            if (!resId || !rec?.data?.is_processing) {
+                this._mrpStopProgress();
+                return;
             }
-            return res;
-        },
-
-        _startProgressTracking: function () {
-            if (this.progressInterval) {
-                clearInterval(this.progressInterval);
-            }
-
-            const self = this;
-            this.progressInterval = setInterval(function () {
-                if (self.model.get(self.handle).data.is_processing) {
-                    self._checkProgress();
-                } else {
-                    clearInterval(self.progressInterval);
+            const result = await this.orm.call(
+                "mrp.production.import", "get_import_progress", [resId]
+            );
+            if (result && !result.error && result.is_processing) {
+                const bar = document.querySelector(".o_form_view .progress-bar");
+                if (bar) {
+                    bar.style.width = result.percentage + "%";
+                    const span = bar.querySelector("span");
+                    if (span) span.textContent = Math.round(result.percentage) + "%";
                 }
-            }, 1000); // Check every second
-        },
-
-        _checkProgress: function () {
-            const self = this;
-            const recordID = this.model.get(this.handle).res_id;
-
-            if (!recordID) return;
-
-            this._rpc({
-                model: 'mrp.production.import',
-                method: 'get_import_progress',
-                args: [recordID],
-            }).then(function (result) {
-                if (!result.error && result.is_processing) {
-                    // Update progress bar dynamically
-                    self.$('.progress-bar').css('width', result.percentage + '%');
-                    self.$('.progress-bar span').text(Math.round(result.percentage) + '%');
-                    self.$('[name="progress_current"]').text(result.current);
-
-                    if (result.state === 'done') {
-                        self.reload();
-                    }
+                if (result.state === "done") {
+                    this._mrpStopProgress();
+                    await rec.load();
+                    this.render(true);
                 }
-            });
-        },
-
-        destroy: function () {
-            if (this.progressInterval) {
-                clearInterval(this.progressInterval);
             }
-            this._super.apply(this, arguments);
-        },
-    });
+        }, 1000);
+    },
 });
