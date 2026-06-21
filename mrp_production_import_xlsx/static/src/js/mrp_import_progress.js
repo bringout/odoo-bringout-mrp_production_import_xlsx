@@ -1,3 +1,6 @@
+// TODO v19: this module uses the legacy web.FormController.include / _rpc / this.$
+// API removed in Odoo 17+. Disabled in __manifest__.py assets; rewrite as an OWL
+// patch (@web/views/form/form_controller + @web/core/orm_service) and re-enable.
 odoo.define('mrp_production_import.progress', function (require) {
     "use strict";
 

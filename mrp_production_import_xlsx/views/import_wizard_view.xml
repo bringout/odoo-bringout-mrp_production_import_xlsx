@@ -27,7 +27,7 @@
                     </div>
 
                     <!-- Progress indicator -->
-                    <group attrs="{'invisible': ['|', ('is_processing','=',False), ('state','=','done')]}">
+                    <group invisible="is_processing == False or state == 'done'">
                         <div class="o_import_progress">
                             <div class="alert alert-info" role="status">
                                 <h4>Import in progress...</h4>
@@ -46,12 +46,12 @@
                     </group>
 
                     <!-- Log displayed once everything is done -->
-                    <div class="alert alert-danger" role="alert" attrs="{'invisible': ['|', ('state','!=','done'), ('import_status','!=','error')]}">
+                    <div class="alert alert-danger" role="alert" invisible="state != 'done' or import_status != 'error'">
                         <h4>Import ERROR</h4>
                         <p>The following errors occurred:</p>
                         <field name="log" nolabel="1" readonly="1" widget="text"/>
                     </div>
-                    <div class="alert alert-success" role="alert" attrs="{'invisible': ['|', ('state','!=','done'), ('import_status','!=','success')]}">
+                    <div class="alert alert-success" role="alert" invisible="state != 'done' or import_status != 'success'">
                         <h4>Import completed!</h4>
                         <field name="log" nolabel="1" readonly="1" widget="text"/>
                     </div>
@@ -66,7 +66,7 @@
                     <!-- STEP-2 : only visible while in *confirm* -->
                     <button name="action_import" string="Import"
                             type="object" class="btn-primary"
-                            attrs="{'invisible': ['|', ('state','!=','confirm'), ('is_processing','=',True)]}"/>
+                            invisible="state != 'confirm' or is_processing == True"/>
 
                     <!-- Show spinner while processing -->
                     <span invisible="is_processing == False">

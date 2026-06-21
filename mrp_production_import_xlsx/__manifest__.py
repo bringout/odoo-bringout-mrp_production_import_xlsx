@@ -12,7 +12,7 @@
     ],
     "assets": {
         "web.assets_backend": [
-            "mrp_production_import_xlsx/static/src/js/mrp_import_progress.js",
+            # "mrp_production_import_xlsx/static/src/js/mrp_import_progress.js",  # TODO v19: legacy web.FormController JS -> needs OWL rewrite
         ],
     },
     "installable": True,
